@@ -1,6 +1,6 @@
-# SchoolCycle — Interactive Prototype
+# SchoolsCycle — Interactive Prototype
 
-A visual demo of the SchoolCycle concept: a South African multi-vendor marketplace
+A visual demo of the SchoolsCycle concept: a South African multi-vendor marketplace
 for buying and selling pre-loved school essentials, where participating schools earn
 a commission on every sale.
 
