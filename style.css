@@ -1,30 +1,31 @@
-/* SchoolCycle prototype — Buy. Sell. Support. Sustain. */
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap');
+/* SchoolCycle prototype — Buy. Sell. Support. Sustain. — brand palette */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
-  --green:#1f7a52;
-  --green-dark:#155c3d;
-  --green-soft:#e8f5ee;
-  --mint:#f2faf5;
-  --amber:#f2a53a;
-  --amber-soft:#fdf1dd;
-  --ink:#16231c;
-  --muted:#5d6f64;
-  --line:#e2ece6;
-  --paper:#fbfdfb;
+  --green:#0f3d2e;        /* brand dark green */
+  --green-dark:#0a2c20;
+  --green-soft:#dce6d6;   /* pale green */
+  --mint:#eef3e9;
+  --sage:#8aa37a;         /* sage green */
+  --amber:#8aa37a;        /* accent = sage (brand has no amber) */
+  --amber-soft:#e7efe0;
+  --ink:#333333;          /* charcoal */
+  --muted:#6f776c;
+  --line:#e2e8dd;
+  --paper:#f6f4ed;        /* cream */
   --white:#ffffff;
   --radius:16px;
-  --shadow:0 1px 2px rgba(20,40,28,.05), 0 8px 28px rgba(20,60,40,.07);
-  --shadow-lg:0 20px 50px rgba(20,60,40,.14);
+  --shadow:0 1px 2px rgba(15,40,30,.05), 0 8px 28px rgba(15,50,35,.08);
+  --shadow-lg:0 20px 50px rgba(15,50,35,.15);
 }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);
+  margin:0;font-family:'Poppins',system-ui,sans-serif;color:var(--ink);
   background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;
 }
-h1,h2,h3,h4{font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.01em}
+h1,h2,h3,h4{font-family:'Poppins',system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.01em}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
 .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
@@ -32,9 +33,9 @@ img{max-width:100%}
 /* ---------- header ---------- */
 .top{position:sticky;top:0;z-index:50;background:rgba(251,253,251,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;gap:26px;height:70px}
-.brand{display:flex;align-items:center;gap:10px;font-family:'Bricolage Grotesque';font-weight:700;font-size:20px;letter-spacing:-.02em}
-.brand .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--green),#2fa06b);display:grid;place-items:center;color:#fff;font-size:18px}
-.brand small{display:block;font-family:'Inter';font-weight:500;font-size:10.5px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:-2px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Poppins';font-weight:700;font-size:20px;letter-spacing:-.02em}
+.brand .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--green),var(--sage));display:grid;place-items:center;color:#fff;font-size:18px}
+.brand small{display:block;font-family:'Poppins';font-weight:500;font-size:10.5px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:-2px}
 .nav{display:flex;gap:22px;margin-left:8px}
 .nav a{font-size:14.5px;font-weight:500;color:var(--muted);transition:color .15s}
 .nav a:hover,.nav a.active{color:var(--green)}
@@ -60,7 +61,7 @@ img{max-width:100%}
 .hero p.lede{font-size:18px;color:var(--muted);max-width:30ch;margin:20px 0 28px}
 .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
 .slogan{display:flex;gap:8px;margin-top:30px;flex-wrap:wrap}
-.slogan span{font-family:'Bricolage Grotesque';font-weight:600;font-size:14px;color:var(--green-dark);background:var(--white);border:1px solid var(--line);padding:6px 13px;border-radius:10px}
+.slogan span{font-family:'Poppins';font-weight:600;font-size:14px;color:var(--green-dark);background:var(--white);border:1px solid var(--line);padding:6px 13px;border-radius:10px}
 .slogan span b{color:var(--amber)}
 
 /* search card */
@@ -82,15 +83,15 @@ section{padding:60px 0}
 /* school chips */
 .schools{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .school{display:flex;gap:13px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);transition:.18s}
-.school:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#cfe6da}
-.crest{width:46px;height:46px;border-radius:12px;flex:none;display:grid;place-items:center;font-family:'Bricolage Grotesque';font-weight:700;color:#fff;font-size:17px}
+.school:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--sage)}
+.crest{width:46px;height:46px;border-radius:12px;flex:none;display:grid;place-items:center;font-family:'Poppins';font-weight:700;color:#fff;font-size:17px}
 .school b{font-size:14.5px;display:block}
 .school small{color:var(--muted);font-size:12.5px}
 
 /* product grid */
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.18s;display:flex;flex-direction:column}
-.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#cfe6da}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--sage)}
 .thumb{aspect-ratio:4/3;display:grid;place-items:center;position:relative;font-size:52px}
 .thumb .cond{position:absolute;top:11px;left:11px;background:rgba(255,255,255,.92);color:var(--green-dark);font-weight:600;font-size:11.5px;padding:4px 10px;border-radius:999px}
 .thumb .fav{position:absolute;top:9px;right:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;font-size:15px}
@@ -99,14 +100,14 @@ section{padding:60px 0}
 .card h4{font-size:15.5px;font-weight:600}
 .card .meta{font-size:12.5px;color:var(--muted);margin-top:-2px}
 .card .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:8px}
-.price{font-family:'Bricolage Grotesque';font-weight:700;font-size:19px}
+.price{font-family:'Poppins';font-weight:700;font-size:19px}
 .card .foot small{font-size:12px;color:var(--muted)}
 
 /* how it works */
 .how{background:linear-gradient(180deg,var(--mint),var(--paper))}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);position:relative}
-.step .n{width:38px;height:38px;border-radius:11px;background:var(--green-soft);color:var(--green-dark);display:grid;place-items:center;font-family:'Bricolage Grotesque';font-weight:700;font-size:17px;margin-bottom:14px}
+.step .n{width:38px;height:38px;border-radius:11px;background:var(--green-soft);color:var(--green-dark);display:grid;place-items:center;font-family:'Poppins';font-weight:700;font-size:17px;margin-bottom:14px}
 .step h4{font-size:16.5px;margin-bottom:7px}
 .step p{font-size:13.5px;color:var(--muted);margin:0}
 
@@ -123,12 +124,12 @@ section{padding:60px 0}
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--line);background:var(--white);margin-top:20px}
 footer .wrap{padding:42px 22px 30px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
-footer h5{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 12px;font-family:'Inter';font-weight:700}
+footer h5{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 12px;font-family:'Poppins';font-weight:700}
 footer a{display:block;color:var(--muted);font-size:14px;padding:4px 0}
 footer a:hover{color:var(--green)}
 .foot-brand p{color:var(--muted);font-size:13.5px;max-width:28ch;margin:12px 0 0}
 .foot-bottom{border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:12.5px;padding:16px}
-.demo-note{background:var(--amber-soft);color:#8a5a12;text-align:center;font-size:12.5px;font-weight:600;padding:8px}
+.demo-note{background:var(--green);color:#eef3e9;text-align:center;font-size:12.5px;font-weight:600;padding:8px}
 
 /* ---------- breadcrumb ---------- */
 .crumb{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:13.5px;padding:22px 0 4px}
@@ -141,7 +142,7 @@ footer a:hover{color:var(--green)}
 .schoolhead h1{font-size:32px}
 .schoolhead .sub{color:var(--muted);font-size:14.5px;margin-top:4px;display:flex;gap:14px;flex-wrap:wrap}
 .schoolhead .sub b{color:var(--green-dark)}
-.commission-badge{display:inline-flex;align-items:center;gap:8px;background:var(--amber-soft);color:#8a5a12;font-weight:600;font-size:13px;padding:8px 14px;border-radius:999px;border:1px solid #f0dcb6}
+.commission-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green-soft);color:var(--green);font-weight:600;font-size:13px;padding:8px 14px;border-radius:999px;border:1px solid var(--sage)}
 
 /* category tabs */
 .tabs{display:flex;gap:10px;flex-wrap:wrap;padding:24px 0}
@@ -167,7 +168,7 @@ footer a:hover{color:var(--green)}
 .gallery .strip div.sel{border-color:var(--green);box-shadow:0 0 0 2px var(--green-soft)}
 .pdp .schooltag{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--green);background:var(--green-soft);padding:5px 12px;border-radius:999px;margin-bottom:14px}
 .pdp h1{font-size:30px;margin-bottom:10px}
-.pdp .pricebig{font-family:'Bricolage Grotesque';font-weight:700;font-size:34px;margin:6px 0}
+.pdp .pricebig{font-family:'Poppins';font-weight:700;font-size:34px;margin:6px 0}
 .specs{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin:22px 0;padding:20px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius)}
 .spec{display:flex;justify-content:space-between;font-size:14px;padding:5px 0;border-bottom:1px solid var(--line)}
 .spec span{color:var(--muted)}
@@ -177,7 +178,7 @@ footer a:hover{color:var(--green)}
 .escrow b{font-size:14.5px}
 .escrow small{color:var(--muted);font-size:13px}
 .sellerbox{display:flex;align-items:center;gap:13px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--white);margin-bottom:18px}
-.sellerbox .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--amber),#e88a2a);display:grid;place-items:center;color:#fff;font-weight:700}
+.sellerbox .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--sage));display:grid;place-items:center;color:#fff;font-weight:700}
 .sellerbox .stars{color:var(--amber);font-size:13px}
 .buyrow{display:flex;gap:12px}
 .deliv{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
@@ -185,10 +186,10 @@ footer a:hover{color:var(--green)}
 
 /* seller page */
 .sellerhead{display:flex;gap:22px;align-items:center;padding:26px 0}
-.sellerhead .av{width:82px;height:82px;border-radius:24px;background:linear-gradient(135deg,var(--amber),#e88a2a);display:grid;place-items:center;color:#fff;font-family:'Bricolage Grotesque';font-weight:700;font-size:30px}
+.sellerhead .av{width:82px;height:82px;border-radius:24px;background:linear-gradient(135deg,var(--green),var(--sage));display:grid;place-items:center;color:#fff;font-family:'Poppins';font-weight:700;font-size:30px}
 .sellerhead h1{font-size:30px}
 .statrow{display:flex;gap:26px;margin-top:8px}
-.statrow div b{font-family:'Bricolage Grotesque';font-size:19px}
+.statrow div b{font-family:'Poppins';font-size:19px}
 .statrow div small{display:block;color:var(--muted);font-size:12px}
 
 /* how-it-works page */
